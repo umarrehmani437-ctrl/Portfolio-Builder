@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Builder - Pro</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+    <div class="max-w-5xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-center mb-6">💻 Portfolio Builder (Pro)</h1>
+
+        <!-- Form Section -->
+        <div class="bg-white p-6 rounded shadow mb-6 space-y-3">
+            <input id="name" placeholder="Your Name" class="w-full p-3 border rounded outline-none" />
+            <input id="role" placeholder="Your Role (Frontend Developer)"
+                class="w-full p-3 border rounded outline-none" />
+            <textarea id="about" placeholder="About You" class="w-full p-3 border rounded outline-none"></textarea>
+            <input id="skills" placeholder="Skills (comma separated)" class="w-full p-3 border rounded outline-none" />
+            <textarea id="projects" placeholder="Projects (format: ProjectName - Description, comma separated)"
+                class="w-full p-3 border rounded outline-none"></textarea>
+            <input id="linkedin" placeholder="LinkedIn URL" class="w-full p-3 border rounded outline-none" />
+            <input id="github" placeholder="GitHub URL" class="w-full p-3 border rounded outline-none" />
+        </div>
+
+        <!-- Portfolio Preview -->
+        <h2 class="text-2xl font-bold mb-3">Portfolio Preview</h2>
+        <div id="preview" class="bg-white p-6 rounded shadow min-h-[300px] text-center text-gray-500">
+            Your portfolio will appear here...
+        </div>
+    </div>
+
+    <!-- JS Modules -->
+    <script src="/builder/js/state.js"></script>
+    <script src="/builder/js/storage.js"></script>
+    <script src="/builder/js/ui.js"></script>
+    <script src="/builder/js/app.js"></script>
+</body>
+
+</html>
